@@ -26,14 +26,18 @@ nav ul li {
   text-align: right;
   padding-right: 1rem;
   position: relative;
+  left: 60vw;
+  right: 20vw;
+  top: 10vh;
 }
 
 #logo {
-  height: 10vh;
-  width: 50vw;
+  position: relative;
+  bottom: 10vh;
+  left: 25vw;
 }
 
 .img-logo {
-  width: 10rem;
+  width: 15rem;
   height: 10rem;
 }
