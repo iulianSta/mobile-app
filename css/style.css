@@ -40,3 +40,34 @@ nav ul li {
   width: 14rem;
   height: 6rem;
 }
+
+.text {
+  position: relative;
+  left: 20vw;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  color: aliceblue;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+p {
+  padding-bottom: 8vh;
+}
+
+.button {
+  width: 10rem;
+  height: 3rem;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 0.3rem;
+}
+
+.button:first-child {
+  background-color: green;
+}
