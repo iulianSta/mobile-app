@@ -59,7 +59,7 @@ p {
   padding-bottom: 8vh;
 }
 
-.button {
+button {
   width: 10rem;
   height: 3rem;
   color: aliceblue;
@@ -68,6 +68,13 @@ p {
   border-radius: 0.3rem;
 }
 
-.button:first-child {
+button:first-child {
   background-color: green;
+  border-color: green;
+  margin-right: 1rem;
+}
+
+button:nth-child(2) {
+  background-color: blue;
+  border-color: blue;
 }
