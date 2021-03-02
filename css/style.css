@@ -86,3 +86,11 @@ button:nth-child(2) {
   width: 20rem;
   height: 40rem;
 }
+
+#seccond-img {
+  position: relative;
+  bottom: 119.5vh;
+  left: 51.9vw;
+  width: 20rem;
+  height: 40rem;
+}
