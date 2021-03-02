@@ -24,7 +24,7 @@ nav ul li {
   font-weight: bold;
   color: aliceblue;
   text-align: right;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
   position: relative;
   left: 50vw;
   top: 9vh;
@@ -77,4 +77,12 @@ button:first-child {
 button:nth-child(2) {
   background-color: blue;
   border-color: blue;
+}
+
+#first-img {
+  position: relative;
+  bottom: 55vh;
+  left: 60vw;
+  width: 20rem;
+  height: 40rem;
 }
