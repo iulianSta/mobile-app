@@ -1,9 +1,10 @@
+/* All elements style */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+/* Body style */
 body {
   background-image: url(../img/bg_001.jpg);
   background-position: center;
@@ -11,11 +12,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+/* Navigation style */
 nav {
   width: 100vw;
   height: 15vh;
 }
+/* Navigation lists style */
 nav ul li {
   display: inline-block;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -29,18 +31,18 @@ nav ul li {
   left: 50vw;
   top: 9vh;
 }
-
+/* Logo id position */
 #logo {
   position: relative;
   bottom: 10vh;
   left: 20vw;
 }
-
+/* logo class size*/
 .img-logo {
   width: 14rem;
   height: 6rem;
 }
-
+/* Text style */
 .text {
   position: relative;
   left: 20vw;
@@ -48,18 +50,18 @@ nav ul li {
   color: aliceblue;
   font-size: 1.3rem;
 }
-
+/* H1 style */
 h1 {
   font-size: 3rem;
   padding-top: 10vh;
   padding-bottom: 5vh;
 }
-
+/* Paragraph padding */
 p {
   padding-bottom: 8vh;
 }
-
-button {
+/* Buttons style */
+.button {
   width: 10rem;
   height: 3rem;
   color: aliceblue;
@@ -67,18 +69,18 @@ button {
   font-size: medium;
   border-radius: 0.3rem;
 }
-
+/* First button style */
 button:first-child {
   background-color: green;
   border-color: green;
   margin-right: 1rem;
 }
-
+/* Seccond button style */
 button:nth-child(2) {
   background-color: blue;
   border-color: blue;
 }
-
+/* First image style */
 #first-img {
   position: relative;
   bottom: 55vh;
@@ -86,7 +88,7 @@ button:nth-child(2) {
   width: 20rem;
   height: 40rem;
 }
-
+/* Seccond image style */
 #seccond-img {
   position: relative;
   bottom: 119.5vh;
