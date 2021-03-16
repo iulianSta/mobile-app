@@ -4,6 +4,15 @@
   margin: 0;
   padding: 0;
 }
+/* Root style */
+:root {
+  --font-fam-lucinda: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  --font-fam-impact: Impact, "Arial Narrow Bold", sans-serif;
+  --color-a-blue: aliceblue;
+  --color-green: green;
+  --color-blue: blue;
+}
 /* Body style */
 body {
   background-image: url(../img/bg_001.jpg);
@@ -20,11 +29,10 @@ nav {
 /* Navigation lists style */
 nav ul li {
   display: inline-block;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: var(--font-fam-lucinda);
   font-size: medium;
   font-weight: bold;
-  color: aliceblue;
+  color: var(--color-a-blue);
   text-align: right;
   padding-right: 1.5rem;
   position: relative;
@@ -46,8 +54,8 @@ nav ul li {
 .text {
   position: relative;
   left: 20vw;
-  font-family: Impact, "Arial Narrow Bold", sans-serif;
-  color: aliceblue;
+  font-family: var(--font-fam-impact);
+  color: var(--color-a-blue);
   font-size: 1.3rem;
 }
 /* H1 style */
@@ -64,21 +72,21 @@ p {
 .button {
   width: 10rem;
   height: 3rem;
-  color: aliceblue;
+  color: var(--color-a-blue);
   font-weight: bold;
   font-size: medium;
   border-radius: 0.3rem;
 }
 /* First button style */
 button:first-child {
-  background-color: green;
-  border-color: green;
+  background-color: var(--color-green);
+  border-color: var(--color-green);
   margin-right: 1rem;
 }
 /* Seccond button style */
 button:nth-child(2) {
-  background-color: blue;
-  border-color: blue;
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
 }
 /* First image style */
 #first-img {
