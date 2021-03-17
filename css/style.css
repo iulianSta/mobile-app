@@ -14,12 +14,26 @@
   --color-green: green;
   --color-blue: blue;
 }
-
+/* Small phones style */
+@media only screen and (min-width: 360px) {
+  .img-logo {
+    display: flex;
+    margin-top: -3rem;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .img-logo {
+    display: flex;
+    margin-top: -4rem;
+    margin-right: 2rem;
+  }
+}
 /* Tablets and large phones style */
 @media only screen and (min-width: 600px) {
   .img-logo {
     display: flex;
-    margin-top: -4rem;
+    margin-top: -6rem;
     margin-right: 5rem;
   }
   .main {
@@ -52,7 +66,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 /* Hamburger menu style */
 .hamburger {
@@ -96,12 +110,12 @@ body {
 
 /* Logo style*/
 .img-logo {
-  width: 14rem;
-  height: 6rem;
+  width: 10rem;
+  height: 4rem;
   display: block;
   position: relative;
-  top: -6rem;
-  right: 1rem;
+  top: -4rem;
+  right: 2rem;
 }
 /* Main content style */
 .main {
@@ -116,6 +130,7 @@ body {
   color: var(--color-a-blue);
   font-size: 1.3rem;
   padding-left: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 /* H1 style  */
