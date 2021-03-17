@@ -67,5 +67,18 @@
         </div>
       </div>
     </section>
+    <script>
+      let clicked = false;
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        clicked = !clicked;
+        console.log(clicked);
+        if (clicked) {
+          document.querySelector(".side-menu").style.cssText =
+            "display: block; position: absolute;top: 6rem;left:0;z-index: 1;";
+        } else {
+          document.querySelector(".side-menu").style.cssText = "display: none;";
+        }
+      });
+    </script>
   </body>
 </html>

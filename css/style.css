@@ -14,18 +14,15 @@
   --color-green: green;
   --color-blue: blue;
 }
-/* Phones style */
-@media only screen and (max-width: 600px) {
-}
+
 /* Tablets and large phones style */
 @media only screen and (min-width: 600px) {
-  .header {
-    flex-direction: column;
+  .img-logo {
+    display: flex;
+    margin-top: -4rem;
+    margin-right: 5rem;
   }
-  .menu {
-    width: 100vw;
-    height: 10vh;
-    justify-content: center;
+  .main {
     flex-direction: column;
   }
 }
@@ -39,10 +36,8 @@
 body {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: block;
+  position: absolute;
   background-image: url(../img/bg_001.jpg);
   background-position: center;
   background-size: cover;
@@ -52,91 +47,96 @@ body {
 /* Header style */
 /* Logo and Hamburger menu */
 .header {
-  width: 100%;
-  height: 15%;
+  width: 100vw;
+  height: 40vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
+  margin-bottom: 2rem;
 }
 /* Hamburger menu style */
 .hamburger {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 3rem;
   height: 3rem;
+  margin-bottom: 3rem;
 }
 .hamburger div {
-  width: 2.5rem;
-  border: 2px black solid;
+  width: 3.5rem;
+  border: 3px white solid;
 }
 /* Menu style */
 .menu {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row-reverse;
+  display: block;
+  position: relative;
+  top: 2rem;
+  left: 3rem;
 }
 /* Navigation menu style */
 .side-menu ul {
-  width: 40vw;
-  height: 15vh;
   font-family: var(--font-fam-lucinda);
   font-size: medium;
   font-weight: bold;
   color: var(--color-a-blue);
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: block;
+}
+
+.side-menu ul li {
+  padding-bottom: 1rem;
+}
+.side-menu {
+  display: none;
 }
 
 /* Logo style*/
 .img-logo {
   width: 14rem;
   height: 6rem;
+  display: block;
+  position: relative;
+  top: -6rem;
+  right: 1rem;
 }
 /* Main content style */
 .main {
-  width: 100%;
-  height: 85%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column-reverse;
 }
 /* Right side style*/
 .text {
   font-family: var(--font-fam-impact);
   color: var(--color-a-blue);
   font-size: 1.3rem;
-  width: 32%;
-  height: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: column;
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
 }
 /* H1 style  */
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
 }
 /* Paragraph style */
 p {
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 /* Buttons style */
 .button {
-  width: 13rem;
-  height: 4rem;
+  width: 9rem;
+  height: 3rem;
   color: var(--color-a-blue);
   font-weight: bold;
   font-size: large;
   border-radius: 7px;
+  margin-bottom: 1rem;
 }
 /* First button style */
 button:first-child {
@@ -152,20 +152,175 @@ button:nth-child(2) {
 /* Left side style*/
 /* Images style */
 .images {
+  display: block;
+  margin-left: 2rem;
+}
+/* First image style */
+#first-img {
+  width: 15rem;
+  height: 30rem;
+  margin-bottom: 2rem;
+}
+/* Seccond image style */
+#second-img {
+  width: 15rem;
+  height: 30rem;
+  margin-bottom: 2rem;
+}
+
+/* 
+Phones style
+@media only screen and (max-width: 600px) {
+}
+Tablets and large phones style
+@media only screen and (min-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .menu {
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+Laptops/desktops style
+@media only screen and (min-width: 1500px) {
+  .hamburger div {
+    display: none;
+  }
+}
+Body style
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/bg_001.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+Header style
+Logo and Hamburger menu
+.header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+Hamburger menu style
+.hamburger {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+}
+.hamburger div {
+  width: 2.5rem;
+  border: 2px black solid;
+}
+Menu style
+.menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+Navigation menu style
+.side-menu ul {
+  width: 40vw;
+  height: 15vh;
+  font-family: var(--font-fam-lucinda);
+  font-size: medium;
+  font-weight: bold;
+  color: var(--color-a-blue);
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+Logo style
+.img-logo {
+  width: 14rem;
+  height: 6rem;
+}
+Main content style
+.main {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+Right side style
+.text {
+  font-family: var(--font-fam-impact);
+  color: var(--color-a-blue);
+  font-size: 1.3rem;
+  width: 32%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+H1 style 
+h1 {
+  font-size: 3rem;
+}
+Paragraph style
+p {
+  font-weight: bold;
+}
+Buttons style
+.button {
+  width: 13rem;
+  height: 4rem;
+  color: var(--color-a-blue);
+  font-weight: bold;
+  font-size: large;
+  border-radius: 7px;
+}
+First button style
+button:first-child {
+  background-color: var(--color-green);
+  border: var(--color-green);
+  margin-right: 1rem;
+}
+Seccond button style
+button:nth-child(2) {
+  background-color: var(--color-blue);
+  border: var(--color-blue);
+}
+Left side style
+Images style
+.images {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-/* First image style */
+First image style
 #first-img {
   width: 20rem;
   height: 40rem;
 }
-/* Seccond image style */
+Seccond image style
 #second-img {
   width: 20rem;
   height: 40rem;
   position: relative;
   top: 1rem;
   right: 29.3rem;
-}
+} */
