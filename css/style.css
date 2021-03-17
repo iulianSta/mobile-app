@@ -6,6 +6,7 @@
 }
 /* Root style */
 :root {
+  font-size: 16px;
   --font-fam-lucinda: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
   --font-fam-impact: Impact, "Arial Narrow Bold", sans-serif;
@@ -13,94 +14,158 @@
   --color-green: green;
   --color-blue: blue;
 }
+/* Phones style */
+@media only screen and (max-width: 600px) {
+}
+/* Tablets and large phones style */
+@media only screen and (min-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .menu {
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+/* Laptops/desktops style */
+@media only screen and (min-width: 1500px) {
+  .hamburger div {
+    display: none;
+  }
+}
 /* Body style */
 body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-image: url(../img/bg_001.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-/* Navigation style */
-nav {
-  width: 100vw;
-  height: 15vh;
+/* Header style */
+/* Logo and Hamburger menu */
+.header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
 }
-/* Navigation lists style */
-nav ul li {
-  display: inline-block;
+/* Hamburger menu style */
+.hamburger {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+}
+.hamburger div {
+  width: 2.5rem;
+  border: 2px black solid;
+}
+/* Menu style */
+.menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+/* Navigation menu style */
+.side-menu ul {
+  width: 40vw;
+  height: 15vh;
   font-family: var(--font-fam-lucinda);
   font-size: medium;
   font-weight: bold;
   color: var(--color-a-blue);
-  text-align: right;
-  padding-right: 1.5rem;
-  position: relative;
-  left: 50vw;
-  top: 9vh;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-/* Logo id position */
-#logo {
-  position: relative;
-  bottom: 10vh;
-  left: 20vw;
-}
-/* logo class size*/
+
+/* Logo style*/
 .img-logo {
   width: 14rem;
   height: 6rem;
 }
-/* Text style */
+/* Main content style */
+.main {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+/* Right side style*/
 .text {
-  position: relative;
-  left: 20vw;
   font-family: var(--font-fam-impact);
   color: var(--color-a-blue);
   font-size: 1.3rem;
+  width: 32%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
 }
-/* H1 style */
+/* H1 style  */
 h1 {
   font-size: 3rem;
-  padding-top: 10vh;
-  padding-bottom: 5vh;
 }
-/* Paragraph padding */
+/* Paragraph style */
 p {
-  padding-bottom: 8vh;
+  font-weight: bold;
 }
 /* Buttons style */
 .button {
-  width: 10rem;
-  height: 3rem;
+  width: 13rem;
+  height: 4rem;
   color: var(--color-a-blue);
   font-weight: bold;
-  font-size: medium;
-  border-radius: 0.3rem;
+  font-size: large;
+  border-radius: 7px;
 }
 /* First button style */
 button:first-child {
   background-color: var(--color-green);
-  border-color: var(--color-green);
+  border: var(--color-green);
   margin-right: 1rem;
 }
 /* Seccond button style */
 button:nth-child(2) {
   background-color: var(--color-blue);
-  border-color: var(--color-blue);
+  border: var(--color-blue);
+}
+/* Left side style*/
+/* Images style */
+.images {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 /* First image style */
 #first-img {
-  position: relative;
-  bottom: 55vh;
-  left: 60vw;
   width: 20rem;
   height: 40rem;
 }
 /* Seccond image style */
-#seccond-img {
-  position: relative;
-  bottom: 119.5vh;
-  left: 51.9vw;
+#second-img {
   width: 20rem;
   height: 40rem;
+  position: relative;
+  top: 1rem;
+  right: 29.3rem;
 }
