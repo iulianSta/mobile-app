@@ -75,9 +75,11 @@
   }
 }
 @media only screen and (min-width: 1000px) {
-  .hamburger div {
+  .hamburger {
     position: relative;
-    left: 20vw;
+    top: 3vh;
+    left: 14vw;
+    float: right;
   }
   #logo {
     right: 70vw;
@@ -97,9 +99,10 @@
 }
 /* Laptops/desktops style */
 @media only screen and (min-width: 1200px) {
-  .hamburger div {
+  .hamburger {
     position: relative;
-    left: 40vw;
+    left: inherit;
+    right: 10vw;
   }
   .side-menu ul {
     position: relative;
@@ -142,17 +145,36 @@ body {
 }
 /* Hamburger menu style */
 .hamburger {
+  width: 3.5rem;
+  height: 3rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 3rem;
-  height: 3rem;
   margin-bottom: 3rem;
+  border: 1px blue solid;
 }
+/* Hamburger menu individual style */
 .hamburger div {
   width: 3.5rem;
-  border: 3px white solid;
+  height: 0.2rem;
+  background-color: whitesmoke;
+  border-radius: 25%;
+  transition: 0.5s;
+}
+/* Hamburger menu Hover style */
+/* Top line style */
+.hamburger:hover .x-top {
+  transform: rotate(0.15turn);
+  position: absolute;
+}
+/* Center line style */
+.hamburger:hover .x-center {
+  display: none;
+}
+/* Bottom line style */
+.hamburger:hover .x-bottom {
+  transform: rotate(-0.15turn);
 }
 /* Menu style */
 .menu {
