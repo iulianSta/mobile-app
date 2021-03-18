@@ -135,18 +135,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  border: blue 2px dotted;
 }
 /* Header style */
 /* Logo and Hamburger menu */
 .header {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  border: black 2px solid;
   padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 /* Hamburger menu style */
 .hamburger {
@@ -182,10 +180,11 @@ body {
   align-items: flex-start;
   flex-direction: column;
 }
-
+/* Lists style */
 .side-menu ul li {
   padding-bottom: 0.5em;
 }
+/* Side menu/ Display none */
 .side-menu {
   display: none;
 }
@@ -199,66 +198,72 @@ body {
 }
 /* Main content style */
 .main {
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  padding: 2em 0.5em 1em 0.5em;
 }
-/* Right side style*/
-.text {
-  font-family: var(--font-fam-impact);
-  color: var(--color-a-blue);
-  font-size: 1.3rem;
-  padding-left: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-/* H1 style  */
-h1 {
-  font-size: 2.8rem;
-  margin-bottom: 2rem;
-}
-/* Paragraph style */
-p {
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-/* Buttons style */
-.button {
-  width: 9rem;
-  height: 3rem;
-  color: var(--color-a-blue);
-  font-weight: bold;
-  font-size: large;
-  border-radius: 7px;
-  margin-bottom: 1rem;
-}
-/* First button style */
-button:first-child {
-  background-color: var(--color-green);
-  border: var(--color-green);
-  margin-right: 1rem;
-}
-/* Seccond button style */
-button:nth-child(2) {
-  background-color: var(--color-blue);
-  border: var(--color-blue);
-}
-/* Left side style*/
 /* Images style */
 .images {
-  display: block;
-  margin-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 /* First image style */
 #first-img {
   width: 15rem;
   height: 30rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
 }
 /* Seccond image style */
 #second-img {
   width: 15rem;
   height: 30rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
+}
+/* Text area style*/
+.text {
+  font-family: var(--font-fam-impact);
+  font-size: 1.3em;
+  color: var(--color-a-blue);
+}
+/* H1 style  */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+  padding-left: 0.2em;
+}
+/* Paragraph style */
+p {
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  padding-left: 0.2em;
+}
+/* Buttons style */
+.button {
+  font-size: large;
+  font-weight: bold;
+  width: 9em;
+  height: 3em;
+  margin-bottom: 1em;
+  color: var(--color-a-blue);
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+/* First button style */
+button:first-child {
+  background-color: var(--color-green);
+  border: var(--color-green);
+}
+/* Seccond button style */
+button:nth-child(2) {
+  background-color: var(--color-blue);
+  border: var(--color-blue);
 }
