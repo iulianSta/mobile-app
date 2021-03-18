@@ -30,7 +30,7 @@
     margin-right: 3rem;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 767px) {
   .header {
     width: 100vw;
     height: 20vh;
@@ -99,21 +99,9 @@
 }
 /* Laptops/desktops style */
 @media only screen and (min-width: 1200px) {
-  .hamburger {
-    position: relative;
-    left: inherit;
-    right: 10vw;
-  }
-  /* .hamburger:hover .x-top {
-    transform: rotate(0.15turn);
-    position: absolute;
-  }
-  .hamburger:hover .x-center {
+  .hamburger div {
     display: none;
   }
-  .hamburger:hover .x-bottom {
-    transform: rotate(-0.15turn);
-  } */
   .side-menu ul {
     position: relative;
     left: 52vw;
