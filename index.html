@@ -75,8 +75,18 @@
         if (clicked) {
           document.querySelector(".side-menu").style.cssText =
             "display: block; position: absolute;top: 6rem;left:0;z-index: 1;";
+          document.querySelector(".x-top").style.cssText =
+            "transform: rotate(0.15turn); position: absolute;";
+          document.querySelector(".x-center").style.cssText = "display: none;";
+          document.querySelector(".x-bottom").style.cssText =
+            "transform: rotate(-0.15turn);";
         } else {
           document.querySelector(".side-menu").style.cssText = "display: none;";
+          document.querySelector(".x-top").style.cssText = "display: initial;";
+          document.querySelector(".x-center").style.cssText =
+            "display: initial;";
+          document.querySelector(".x-bottom").style.cssText =
+            "display: initial;";
         }
       });
     </script>

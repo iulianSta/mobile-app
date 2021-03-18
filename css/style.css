@@ -104,6 +104,16 @@
     left: inherit;
     right: 10vw;
   }
+  /* .hamburger:hover .x-top {
+    transform: rotate(0.15turn);
+    position: absolute;
+  }
+  .hamburger:hover .x-center {
+    display: none;
+  }
+  .hamburger:hover .x-bottom {
+    transform: rotate(-0.15turn);
+  } */
   .side-menu ul {
     position: relative;
     left: 52vw;
@@ -152,7 +162,6 @@ body {
   align-items: center;
   flex-direction: column;
   margin-bottom: 3rem;
-  border: 1px blue solid;
 }
 /* Hamburger menu individual style */
 .hamburger div {
@@ -162,20 +171,7 @@ body {
   border-radius: 25%;
   transition: 0.5s;
 }
-/* Hamburger menu Hover style */
-/* Top line style */
-.hamburger:hover .x-top {
-  transform: rotate(0.15turn);
-  position: absolute;
-}
-/* Center line style */
-.hamburger:hover .x-center {
-  display: none;
-}
-/* Bottom line style */
-.hamburger:hover .x-bottom {
-  transform: rotate(-0.15turn);
-}
+
 /* Menu style */
 .menu {
   width: 100%;
