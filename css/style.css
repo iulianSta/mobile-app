@@ -125,8 +125,11 @@
 body {
   width: auto;
   height: auto;
-  display: block;
-  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
   background-image: url(../img/bg_001.jpg);
   background-position: center;
   background-size: cover;
@@ -137,8 +140,8 @@ body {
 /* Header style */
 /* Logo and Hamburger menu */
 .header {
-  width: 100vw;
-  height: 30vh;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -183,18 +186,16 @@ body {
 .side-menu ul li {
   padding-bottom: 0.5em;
 }
-/* .side-menu {
+.side-menu {
   display: none;
-} */
+}
 
 /* Logo style*/
 .img-logo {
   width: 8rem;
   height: 4rem;
-  /* display: flex; */
-  /*  position: relative;
-  top: -4rem;
-  right: 0.5rem; */
+  display: flex;
+  position: relative;
 }
 /* Main content style */
 .main {
