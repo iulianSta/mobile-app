@@ -274,9 +274,22 @@ button:nth-child(2) {
   }
   .button {
     width: 11em;
-    height: 4em;
+    height: 3.5em;
   }
 }
 /* Media Query for Tablets Ipads portrait mode */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    flex-direction: row-reverse;
+  }
+  .main {
+    flex-direction: row-reverse;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+  .button {
+    width: 11em;
+    height: 3.5em;
+  }
 }
