@@ -169,9 +169,9 @@ body {
   padding-bottom: 0.5em;
 }
 /* Side menu/ Display none */
-/* .side-menu {
+.side-menu {
   display: none;
-} */
+}
 /* Logo style*/
 .img-logo {
   width: 8rem;
@@ -262,6 +262,9 @@ button:nth-child(2) {
 /* Media Query */
 /* Media Query for low resolution  Tablets, Ipads */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+  .side-menu {
+    display: none;
+  }
   .main {
     flex-direction: column-reverse;
   }
@@ -281,6 +284,9 @@ button:nth-child(2) {
   .header {
     justify-content: space-between;
     flex-direction: row-reverse;
+  }
+  .side-menu {
+    display: none;
   }
   .main {
     flex-direction: row-reverse;
