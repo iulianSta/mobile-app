@@ -14,96 +14,6 @@
   --color-green: green;
   --color-blue: blue;
 }
-
-/* @media only screen and (min-width: 767px)  */
-/* .header {
-    width: 100vw;
-    height: 20vh;
-  }
-  .hamburger {
-    position: relative;
-    left: 39rem;
-  }
-  .side-menu ul {
-    position: relative;
-    left: 14rem;
-  }
-  .side-menu ul li {
-    display: inline;
-    padding-right: 1rem;
-  }
-  #logo {
-    position: relative;
-    right: 65vw;
-  }
-  .text {
-    width: 45%;
-    height: 100%;
-    position: relative;
-    right: 13rem;
-  }
-  .images {
-    width: 10vw;
-    height: 15vh;
-    position: relative;
-    top: 12rem;
-    left: 8rem;
-  }
-  .main {
-    position: relative;
-    bottom: 30vh;
-  }
-  #second-img {
-    position: relative;
-    bottom: 48vh;
-    right: 14vw;
-  } */
-
-/* @media only screen and (min-width: 1000px)  */
-/* .hamburger {
-    position: relative;
-    top: 3vh;
-    left: 14vw;
-    float: right;
-  }
-  #logo {
-    right: 70vw;
-    bottom: 5vw;
-  }
-  .side-menu ul {
-    left: 40vw;
-  }
-  .images {
-    left: 20vw;
-  }
-  #second-img {
-    position: relative;
-    bottom: 37vh;
-    right: 10.5vw;
-  } */
-
-/* Laptops/desktops style */
-/* @media only screen and (min-width: 1200px)  */
-/* .hamburger div {
-    display: none;
-  }
-  .side-menu ul {
-    position: relative;
-    left: 52vw;
-  }
-  #logo {
-    top: 3vh;
-  }
-  #first-img {
-    position: relative;
-    bottom: 10vh;
-  }
-  #second-img {
-    position: relative;
-    bottom: 61vh;
-    right: 6vw;
-  } */
-
 /* Initial style/ Small Mobile Devices */
 /* Body style */
 body {
@@ -211,7 +121,7 @@ body {
   height: 30rem;
   margin-bottom: 2em;
 }
-
+/* Textarea */
 .text-area {
   width: 100%;
   height: 100%;
@@ -262,15 +172,19 @@ button:nth-child(2) {
 /* Media Query */
 /* Media Query for low resolution  Tablets, Ipads */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Menu style */
   .side-menu {
     display: none;
   }
+  /* Main content area style */
   .main {
     flex-direction: column-reverse;
   }
+  /* Textarea style */
   .text-area {
     padding-bottom: 2em;
   }
+  /* Buttons style */
   .buttons {
     flex-direction: row;
   }
@@ -281,16 +195,20 @@ button:nth-child(2) {
 }
 /* Media Query for Tablets Ipads portrait mode */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Header style */
   .header {
     justify-content: space-between;
     flex-direction: row-reverse;
   }
+  /* Menu style */
   .side-menu {
     display: none;
   }
+  /* Main content area style */
   .main {
     flex-direction: row-reverse;
   }
+  /* Buttons style */
   .buttons {
     flex-direction: row;
   }
@@ -301,14 +219,17 @@ button:nth-child(2) {
 }
 /* Media Query for Laptops and Desktops */
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* Body style */
   body {
     padding: 5rem 5rem 0 5rem;
   }
+  /* Header style */
   .header {
     justify-content: space-between;
     flex-direction: row-reverse;
     padding: 2rem 3rem 0 3rem;
   }
+  /* Menu style */
   .side-menu {
     display: flex;
   }
@@ -324,21 +245,26 @@ button:nth-child(2) {
     padding-top: 1.5em;
     padding-left: 1em;
   }
+  /* Hamburger menu none style */
   .hamburger {
     display: none;
   }
+  /* Main style */
   .main {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
   }
+  /* Textarea style */
   .text-area {
     justify-content: center;
     align-items: flex-start;
   }
+  /* H1 style */
   h1 {
     padding-left: 0;
   }
+  /* Buttons */
   .buttons {
     justify-content: flex-start;
     align-items: flex-start;
@@ -350,6 +276,7 @@ button:nth-child(2) {
     height: 3em;
     margin-right: 2em;
   }
+  /* Images style */
   .images {
     justify-content: center;
     align-items: flex-end;
@@ -364,18 +291,23 @@ button:nth-child(2) {
 }
 /* Media Query for Large screens */
 @media only screen and (min-width: 1281px) {
+  /* Body style */
   body {
     padding: 5rem 20rem 0 20rem;
   }
+  /* Header style */
   .header {
+    width: 65vw;
     justify-content: space-between;
     flex-direction: row-reverse;
     padding: 2rem 3rem 0 3rem;
   }
+  /* Logo style */
   .img-logo {
     width: 10rem;
     height: 4rem;
   }
+  /* Menu style */
   .side-menu {
     display: flex;
   }
@@ -391,21 +323,26 @@ button:nth-child(2) {
     padding-top: 1.5em;
     padding-left: 1em;
   }
+  /* Hamburger menu none style */
   .hamburger {
     display: none;
   }
+  /* Main content area style */
   .main {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
   }
+  /* Textarea style */
   .text-area {
     justify-content: center;
     align-items: flex-start;
   }
+  /* H1 style */
   h1 {
     padding-left: 0;
   }
+  /* Buttons style */
   .buttons {
     justify-content: flex-start;
     align-items: flex-start;
@@ -417,6 +354,7 @@ button:nth-child(2) {
     height: 3em;
     margin-right: 2em;
   }
+  /* Images style */
   .images {
     justify-content: center;
     align-items: flex-end;
