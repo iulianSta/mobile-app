@@ -22,7 +22,7 @@
   div {
     width: 3.5rem;
     height: 0.3rem;
-    background-color: $color-white-smoke;
+    background-color: $color-whitesmoke;
     border-radius: 25%;
     transition: 0.5s;
   }
@@ -32,21 +32,22 @@
   display: flex;
   position: relative;
 }
-/* Navigation menu style */
-.side-menu ul {
-  font-family: $font-fam-lucinda;
-  font-size: medium;
-  font-weight: bold;
-  color: $color-a-blue;
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
+
 /* Side menu/ Display none */
 .side-menu {
   display: none;
+  /* Navigation menu style */
+  ul {
+    font-family: $font-fam-lucinda;
+    font-size: medium;
+    font-weight: bold;
+    color: $color-a-blue;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
   /* Lists style */
   li {
     padding-bottom: 0.5em;
