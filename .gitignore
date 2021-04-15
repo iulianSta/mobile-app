@@ -2,3 +2,4 @@ node_modules
 dist
 src/styles
 css/style.css
+.vscode/settings.json
