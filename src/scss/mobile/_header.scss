@@ -32,10 +32,10 @@
 }
 /* Navigation menu style */
 .side-menu ul {
-  font-family: var(--font-fam-lucinda);
+  font-family: $font-fam-lucinda;
   font-size: medium;
   font-weight: bold;
-  color: var(--color-a-blue);
+  color: $color-a-blue;
   list-style: none;
   display: flex;
   justify-content: flex-start;
