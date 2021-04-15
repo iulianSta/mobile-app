@@ -1,0 +1,52 @@
+/* Header style */
+/* Logo and Hamburger menu */
+.header {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+/* Hamburger menu style */
+.hamburger {
+  width: 3.5rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+/* Hamburger menu individual style */
+.hamburger div {
+  width: 3.5rem;
+  height: 0.3rem;
+  background-color: $color-white-smoke;
+  border-radius: 25%;
+  transition: 0.5s;
+}
+/* Menu style */
+.menu {
+  display: flex;
+  position: relative;
+}
+/* Navigation menu style */
+.side-menu ul {
+  font-family: var(--font-fam-lucinda);
+  font-size: medium;
+  font-weight: bold;
+  color: var(--color-a-blue);
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+/* Lists style */
+.side-menu ul li {
+  padding-bottom: 0.5em;
+}
+/* Side menu/ Display none */
+.side-menu {
+  display: none;
+}
