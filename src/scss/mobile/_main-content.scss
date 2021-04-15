@@ -2,9 +2,9 @@
 .main {
   width: 100%;
   height: 100%;
-  font-family: var(--font-fam-impact);
+  font-family: $font-fam-impact;
   font-size: 1.3em;
-  color: var(--color-a-blue);
+  color: $color-a-blue;
   display: flex;
   justify-content: space-around;
   align-items: center;
