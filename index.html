@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>Mobile App</title>
+    <!-- css file link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <section class="menu">
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+          <div class="x-top"></div>
+          <div class="x-center"></div>
+          <div class="x-bottom"></div>
+        </div>
+        <!-- Navigation bar -->
+        <nav class="side-menu">
+          <!-- Unordered list -->
+          <ul>
+            <li><a href="#"></a>PRODUCTS</li>
+            <li><a href="#"></a>PRICES</li>
+            <li><a href="#"></a>BLOG</li>
+            <li><a href="#"></a>TEAM</li>
+            <li><a href="#"></a>LOGIN</li>
+            <li><a href="#"></a>SIGN UP</li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Logo -->
+      <div id="logo">
+        <img src="./img/logo_001.png" alt="logo" class="img-logo" />
+      </div>
+    </section>
+    <section class="main">
+      <div class="images">
+        <!-- Images -->
+        <div>
+          <img src="./img/phone_001.png" alt="phone1" id="first-img" />
+        </div>
+        <div>
+          <img src="./img/phone_002.png" alt="phone2" id="second-img" />
+        </div>
+      </div>
+      <div class="text-area">
+        <!-- H1 -->
+        <h1>
+          Make your Startup web <br />
+          with our template,
+        </h1>
+        <!-- Paragraph -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+          Quaerat, maxime itaque atque facere ipsam <br />
+          esse laboriosam distinctio autem nihil illum exercitationem.
+          <br />
+          Nobis iste quasi corporis molestiae, <br />
+          dolorum totam beatae ducimus!
+        </p>
+        <div class="buttons">
+          <!-- Buttons -->
+          <button class="button" type="button">Learn More</button>
+          <button class="button" type="button">Get the App</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      let clicked = false;
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        clicked = !clicked;
+        console.log(clicked);
+        if (clicked) {
+          document.querySelector(".side-menu").style.cssText =
+            "display: block; position: absolute;top: 6rem;left:0;z-index: 1;";
+          document.querySelector(".x-top").style.cssText =
+            "transform: rotate(0.15turn); position: absolute;";
+          document.querySelector(".x-center").style.cssText = "display: none;";
+          document.querySelector(".x-bottom").style.cssText =
+            "transform: rotate(-0.15turn);";
+          document.querySelector(".header").style.cssText =
+            "height: 100vh; background: black; transition: 3s;";
+        } else {
+          document.querySelector(".side-menu").style.cssText = "display: none;";
+          document.querySelector(".x-top").style.cssText = "display: initial;";
+          document.querySelector(".x-center").style.cssText =
+            "display: initial;";
+          document.querySelector(".x-bottom").style.cssText =
+            "display: initial;";
+          document.querySelector(".header").style.cssText =
+            "height: auto; transition: 5s;";
+        }
+      });
+    </script>
+  </body>
+</html>
