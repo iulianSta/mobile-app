@@ -18,12 +18,14 @@
   flex-direction: column;
 }
 /* Hamburger menu individual style */
-.hamburger div {
-  width: 3.5rem;
-  height: 0.3rem;
-  background-color: $color-white-smoke;
-  border-radius: 25%;
-  transition: 0.5s;
+.hamburger {
+  div {
+    width: 3.5rem;
+    height: 0.3rem;
+    background-color: $color-white-smoke;
+    border-radius: 25%;
+    transition: 0.5s;
+  }
 }
 /* Menu style */
 .menu {
@@ -42,11 +44,11 @@
   align-items: flex-start;
   flex-direction: column;
 }
-/* Lists style */
-.side-menu ul li {
-  padding-bottom: 0.5em;
-}
 /* Side menu/ Display none */
 .side-menu {
   display: none;
+  /* Lists style */
+  li {
+    padding-bottom: 0.5em;
+  }
 }
