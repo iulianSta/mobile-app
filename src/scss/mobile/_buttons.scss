@@ -1,0 +1,28 @@
+/* Buttons style */
+.buttons {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.button {
+  font-size: large;
+  font-weight: bold;
+  width: 7em;
+  height: 3em;
+  margin-bottom: 1em;
+  color: $aliceblue;
+  border-radius: 7px;
+  /* First button style */
+  &:first-child {
+    background-color: $green;
+    border: none;
+  }
+  /* Seccond button style */
+  &:nth-child(2) {
+    background-color: $blue;
+    border: none;
+  }
+}
