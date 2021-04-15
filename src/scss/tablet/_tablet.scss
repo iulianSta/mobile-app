@@ -1,0 +1,24 @@
+/* Media Query */
+/* Media Query for low resolution  Tablets, Ipads */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Menu style */
+  .side-menu {
+    display: none;
+  }
+  /* Main content area style */
+  .main {
+    flex-direction: column-reverse;
+  }
+  /* Textarea style */
+  .text-area {
+    padding-bottom: 2em;
+  }
+  /* Buttons style */
+  .buttons {
+    flex-direction: row;
+  }
+  .button {
+    width: 11em;
+    height: 3.5em;
+  }
+}
