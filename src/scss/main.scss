@@ -1,4 +1,8 @@
 @import "./var/variables";
 @import "./normalize";
 @import "./mobile/mobile.scss";
+@import "./big-mobiles/big-mobiles";
 @import "./tablet/tablet";
+@import "./tablet-portrait-mode/portrait-mode.scss";
+@import "./laptops/laptops";
+@import "./large-screens/large-screens";

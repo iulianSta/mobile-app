@@ -1,4 +1,4 @@
-/* Buttons style */
+// Buttons style
 .buttons {
   width: 80%;
   height: auto;
@@ -8,19 +8,19 @@
   flex-direction: column;
 }
 .button {
-  font-size: large;
+  font-size: 1em;
   font-weight: bold;
-  width: 7em;
-  height: 3em;
+  width: 6em;
+  height: 2.5em;
   margin-bottom: 1em;
   color: $aliceblue;
   border-radius: 7px;
-  /* First button style */
+  // First button style
   &:first-child {
     background-color: $green;
     border: none;
   }
-  /* Seccond button style */
+  // Seccond button style
   &:nth-child(2) {
     background-color: $blue;
     border: none;

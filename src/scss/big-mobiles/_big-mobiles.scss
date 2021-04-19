@@ -1,0 +1,7 @@
+/* Media Query */
+/* Media Query for low resolution  Tablets, Ipads */
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .buttons {
+    flex-direction: row;
+  }
+}

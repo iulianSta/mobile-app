@@ -1,0 +1,78 @@
+/* Media Query for Large screens */
+@media only screen and (min-width: 1281px) {
+  /* Body style */
+  body {
+    padding: 5rem 20rem 0 20rem;
+  }
+  /* Header style */
+  .header {
+    width: 65vw;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 2rem 3rem 0 3rem;
+  }
+  /* Logo style */
+  .img-logo {
+    width: 10rem;
+    height: 4rem;
+  }
+  /* Menu style */
+  .side-menu {
+    display: flex;
+  }
+  .side-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    position: relative;
+    left: 1.5em;
+  }
+  .side-menu ul li {
+    padding-top: 1.5em;
+    padding-left: 1em;
+  }
+  /* Hamburger menu none style */
+  .hamburger {
+    display: none;
+  }
+  /* Main content area style */
+  .main {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  /* Textarea style */
+  .text-area {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* H1 style */
+  h1 {
+    padding-left: 0;
+  }
+  /* Buttons style */
+  .buttons {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-right: 3.5em;
+  }
+  .button {
+    width: 11em;
+    height: 3em;
+    margin-right: 2em;
+  }
+  /* Images style */
+  .images {
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+  #second-img {
+    position: relative;
+    top: 2rem;
+    left: 4.2rem;
+  }
+}
