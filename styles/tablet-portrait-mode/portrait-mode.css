@@ -1,0 +1,40 @@
+/* Media Query for Tablets Ipads portrait mode */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Header style */
+  .header {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  /* Menu style */
+  .side-menu {
+    display: none;
+  }
+  .side-menu ul {
+    position: relative;
+    right: 3em;
+  }
+
+  /* Main content area style */
+  .main {
+    flex-direction: row-reverse;
+  }
+
+  /* Textarea style */
+  .text-area {
+    width: 65%;
+    padding-bottom: 2em;
+  }
+
+  /* Buttons style */
+  .buttons {
+    flex-direction: row;
+  }
+
+  .button {
+    width: 11em;
+    height: 3.5em;
+  }
+}
+
+/*# sourceMappingURL=portrait-mode.css.map */
