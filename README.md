@@ -25,7 +25,7 @@
 
 **Mobile App**
 
-The application was a simple base school project to be able to show a basic a basic CSS template.
+The application was a simple base school project to be able to show a basic CSS template.
 After reordering to SCSS and make it responsive I had a task to add a functional simple hamburger menu.
 
 - Built With
